@@ -1,14 +1,16 @@
 # Quasimorph Hold To Skip Turn
 ![thumbnail icon](media/thumbnail.png)
-Ever have to wait twenty turns for a Baron to finally reach you and when spamming the space bar, accidentally skip one too many turns?
 
-Maybe spammed space bar one too many times and now the Baron is four tiles closer?
+Have you ever been spamming the space bar because a baron was taking forever to reach you?  Perhaps during that spamming accidently skipped a turn and now the baron is now three tiles closer?
+
+Maybe instead it was on a defense mission, or guarding a stockpile?
 
 This mod allows the user to hold down the space bar (or whatever the game's Skip Turn key is currently bound to) to skip turns until an enemy is seen or detected.
 
-By default, the user must hold the space bar for one second and will skip turns every quarter second until released or stopped by enemy seen/detection.
+The auto skipping will occur once the user has held down the space bar for one second, and then every quarter of a second after that.  It will stop when space bar is released or an enemy is seen or detected.
 
-*Important*: Just like the game's default rules, this currently doesn't stop skipping turns if an enemy caused damage.  I'm looking into this.
+**Important:** The game doesn't stop the player from moving or skipping turns even if they have taken damage. This mod works the same was. I'm looking into making the auto skipping stop.
+
 
 # Configuration
 The mod's configuration can be changed on the Main Menu -> Mods -> WaitForEnemy.

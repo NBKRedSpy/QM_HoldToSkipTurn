@@ -37,7 +37,7 @@ namespace HoldToSkipTurn
 
             ModConfig defaults = new ModConfig();
 
-            ModConfigMenuAPI.RegisterModConfig("HoldToSkipTurn", new List<IConfigValue>()
+            ModConfigMenuAPI.RegisterModConfig("Hold To Skip Turn", new List<IConfigValue>()
             {
                 //Note that MCM does support color codes, as shown below.
 

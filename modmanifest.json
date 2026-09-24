@@ -1,0 +1,9 @@
+{
+  "UniqueModName": "NBKRedSpy_HoldToSkipTurn",
+  "Assemblies": [
+    "HoldToSkipTurn.dll"
+  ],
+  "Dependencies": [],
+  "SteamTags": [
+  ]
+}

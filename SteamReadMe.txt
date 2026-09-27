@@ -5,7 +5,7 @@ Have you ever been spamming the space bar because a baron was taking forever to 
 
 Maybe instead it was on a defense mission, or guarding a stockpile?
 
-This mod allows the user to hold down the space bar (or whatever the game's Skip Turn key is currently bound to) to skip turns until an enemy is seen or detected.
+This mod allows the user to hold down the space bar (or whatever the game's Skip Turn key is currently bound to) to skip turns until an enemy is seen or detected, or the mission objective has been reached.
 
 The auto skipping will occur once the user has held down the space bar for one second, and then every quarter of a second after that.  It will stop when space bar is released or an enemy is seen or detected.
 
@@ -37,7 +37,7 @@ If MCM is not installed, the configuration file can be directly edited at [i]%Us
 [tr]
 [td]SkipRepeatDelay
 [/td]
-[td]250
+[td]125
 [/td]
 [td]When skip turn is held down, this is the delay in milliseconds before the action is repeated.
 [/td]

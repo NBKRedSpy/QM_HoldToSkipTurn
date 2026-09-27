@@ -18,7 +18,7 @@ namespace HoldToSkipTurn
         /// <summary>
         /// he delay in milliseconds the skip key must be held before this mod auto skips turns.
         /// </summary>
-        public int SkipRepeatDelay { get; set; } = 250;
+        public int SkipRepeatDelay { get; set; } = 125;
 
         /// <summary>
         /// When skip turn is held down, this is the delay in milliseconds before the action is repeated.

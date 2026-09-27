@@ -10,12 +10,16 @@ namespace HoldToSkipTurn.Patches
     [HarmonyPatch(typeof(Monster), nameof(Monster.ShowSignal), MethodType.Getter)]
     internal static class Monster_ShowSignal_Patch
     {
-        public  static bool PreviousHasSpottedEnemyThisAP = false;
+        /// <summary>
+        /// Used by multiple patched to indicate a monster has been spotted or the mission objective have been reached.
+        /// The signal to stop the auto skip turn.
+        /// </summary>
+        public  static bool StopEventFired = false;
 
         public static void Prefix(Monster __instance)
         {
             //Store this so the Postfix can abort early.
-            PreviousHasSpottedEnemyThisAP = __instance?._creatures?.Player?.HasSpottedEnemyThisAP ?? false;
+            StopEventFired = __instance?._creatures?.Player?.HasSpottedEnemyThisAP ?? false;
         }
     }
 }

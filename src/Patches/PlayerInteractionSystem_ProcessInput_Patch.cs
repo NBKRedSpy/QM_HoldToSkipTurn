@@ -48,10 +48,10 @@ namespace HoldToSkipTurn.Patches
                 Player player = creatures.Player;
 
                 //This works if they see the enemy, but not if signaled.
-                if (CreatureSystem.IsSeeMonsters(player._creatures, player._mapGrid) || Monster_ShowSignal_Patch.PreviousHasSpottedEnemyThisAP)
+                if (CreatureSystem.IsSeeMonsters(player._creatures, player._mapGrid) || Monster_ShowSignal_Patch.StopEventFired)
                 {
 
-                    Monster_ShowSignal_Patch.PreviousHasSpottedEnemyThisAP = false;
+                    Monster_ShowSignal_Patch.StopEventFired = false;
                     
 
                     //new enemy has been spotted.  Stop the auto skip turn.
